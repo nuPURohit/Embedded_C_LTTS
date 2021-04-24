@@ -1,6 +1,6 @@
 # Actvity-1
 
-# Problem Statement
+# Problem Statement: Turn ON the LED only when both Button Sensor and Heater are ON
 
 ## In Action
 
