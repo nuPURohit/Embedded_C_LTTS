@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      working-directory: ./Activity_1
+      working-directory: ./Activity-1
       run: make
   build:
 
