@@ -1,4 +1,4 @@
-# Embedded C Activity_1 with Continuous Integration and Code Quality
+# Embedded C Activity_1
 
 # Problem Statement: LED blinks only when both Button Sensor and Heater are turned on 
 
