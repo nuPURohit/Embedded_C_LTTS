@@ -1,11 +1,18 @@
-# Embedded C Activity_1
+# Embedded C Case Study
 
-# Problem Statement: LED blinks only when both Button Sensor and Heater are turned on 
+# Problem Statement: 
+## Activity_1 : LED blinks only when both Button Sensor and Heater are turned on 
 
-## In Action
+## Activity 1 : In Action
 
 |ON-ON|ON-OFF|OFF-ON|OFF-OFF|
 :------:|:------:|:-------:|:--------:
-![1](https://github.com/nuPURohit/Embedded_C_LTTS/blob/main/Activity-1/simulation/ON_ON.png)|![2](https://github.com/nuPURohit/Embedded_C_LTTS/blob/main/Activity-1/simulation/ON_OFF.png)|![3](https://github.com/nuPURohit/Embedded_C_LTTS/blob/main/Activity-1/simulation/OFF_ON.png)|![4](https://github.com/nuPURohit/Embedded_C_LTTS/blob/main/Activity-1/simulation/OFF_OFF.png)
+![1]()|![2]()|![3]()|![4]()
+
+## CI and Code Qaulity
+|Build|CppCheck|Codacy|
+|:--:|:--:|:--:|
+||||
+
 
 
