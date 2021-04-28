@@ -15,7 +15,7 @@
 
 int main(void)
 {
-    Activity1();
+    activity1();
     
     uint16_t value = 0;
     
@@ -33,7 +33,7 @@ int main(void)
         
         if(!(PIND&(1<<PD4))!=0)
         {
-            value = Activity2(0);/* Read ADC channel 0 */
+            value = activity2(0);/* Read ADC channel 0 */
         }
 
     }
