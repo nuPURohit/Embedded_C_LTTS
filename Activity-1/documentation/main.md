@@ -1,1 +1,0 @@
-@mainpage Activity_1 by nuPURohit @subpage project_main.c
