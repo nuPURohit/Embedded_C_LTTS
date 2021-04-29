@@ -8,23 +8,22 @@
  * @copyright Copyright (c) 2021
  * 
  */
+// include files
 #include<avr/io.h>
-
-#include"../inc/activity1.h"
-
+#include "activity1.h"
 /**
- * @brief Port Initialization as input or output
+ * @brief Change the state of the LED Pin according to the value of state
  * 
+ * @param state Pin level to which the LED Pin should be set
  */
-void activity1()
+void ledstat(uint8_t state)
 {
-    DDRD &= ~(1<<PD2); //input pin Port D pin 2 (clear bit)
-    DDRD &= ~(1<<PD4);  //input pin Port D pin 4 (clear bit)
-
-    PORTD |= (1<<PD2);  //set bit
-    PORTD |= (1<<PD4);  //set bit
-
-    DDRD |= (1<<PD3);   //output pin Port D pin 3(set bit)
-
-   
+	LED_PORT = (state << LED_PIN);
+}
+void InitLED(void)
+{
+	DDRB|=(1<<PB0);
+    DDRD&=~(1<<PD0);
+    PORTD|=(1<<PD0);
+    PORTD|=(1<<PD1);
 }

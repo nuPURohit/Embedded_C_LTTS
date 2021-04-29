@@ -8,35 +8,56 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include <avr/io.h>
+#include "activity1.h"
+#include "activity2.h"
+#include "activity3.h"
+#include<avr/io.h>
 
-#include"./inc/activity1.h"
-#include"./inc/activity2.h"
+
+/**
+ * @brief Initialize all the peripherals
+ * 
+ */
+
+void peripheral_init(void)
+{
+    /*Configure LED and Switch pins*/
+    InitLED();
+    /*Configure ADC registers and pins*/
+    InitADC();
+    /*Configure PWM registers and pins*/
+    InitPWM();
+}
+    
+   
+uint16_t temp;
 
 int main(void)
 {
-    activity1();
-    
-    uint16_t value = 0;
-    
-	while(1)
-    {   {
-            if  ( (!(PIND & (1<<PD2))) & (!(PIND & (1<<PD4))) )
+    /*uint16_t temp;*/
+    // Initialize peripherals
+    peripheral_init();
+    while(1)
+    {
+        if(SENSOR_ON) //If switch_1 is ON
+        {
+            if(HEAT_ON) //If switch_2 is ON
             {
-                PORTD |= (1<<PD3);  //TURN ON LED
+                ledstat(LED_ON);//LED is ON
+                temp=ReadADC(0);
+                OutPWM(temp);
             }
             else
             {
-                PORTD &= ~(1<<PD3); //TURN OFF LED
+                
+                ledstat(LED_OFF);
             }
         }
-        
-        if(!(PIND&(1<<PD4))!=0)
+        else
         {
-            value = activity2(0);/* Read ADC channel 0 */
+            ledstat(LED_OFF);//LED is OFF
+            OCR1A=0;
         }
-
     }
-
     return 0;
 }
