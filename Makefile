@@ -3,9 +3,9 @@ PROJ_NAME = Embedded_C
 BUILD_DIR = build
 
 # All Source code files
-SRC = src/ReadADC.c\
-src/ledstat.c\
-src/OutPWM.c\
+SRC = src/activity1.c\
+src/activity2.c\
+src/activity3.c\
 main.c\
 
 
