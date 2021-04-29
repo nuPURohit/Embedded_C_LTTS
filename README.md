@@ -1,6 +1,7 @@
 # Embedded C Case Study
 
 # Problem Statement: 
+![activity_list](https://github.com/nuPURohit/Embedded_C_LTTS/blob/main/simulation/activity_list.png)
 1. Button Sensor will check the passenger is sited or not
 2. Temperature sensor works as :
 
