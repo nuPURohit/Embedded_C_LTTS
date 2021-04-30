@@ -24,13 +24,12 @@
 */
 var NAVTREE =
 [
-  [ "Activity_1", "index.html", [
+  [ "Embedded_C", "index.html", [
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Functions", "globals_func.html", null ]
       ] ]
     ] ]
   ] ]
@@ -38,7 +37,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_activity__1_8h_source.html"
+"activity1_8c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

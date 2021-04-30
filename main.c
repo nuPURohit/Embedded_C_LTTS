@@ -3,7 +3,7 @@
  * @author nuPURohit (https://github.com/nuPURohit/Embedded_C_LTTS.git)
  * @brief 
  * @version 0.1
- * @date 2021-04-28
+ * @date 2021-04-30
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -11,7 +11,9 @@
 #include "activity1.h"
 #include "activity2.h"
 #include "activity3.h"
+#include "activity4.h"
 #include<avr/io.h>
+
 
 
 /**
@@ -27,16 +29,19 @@ void peripheral_init(void)
     InitADC();
     /*Configure PWM registers and pins*/
     InitPWM();
+    /*Configure UART serial communication pin*/
+    InitUART(103);
 }
     
    
 uint16_t temp;
-
+char temp_data;
 int main(void)
 {
     /*uint16_t temp;*/
     // Initialize peripherals
     peripheral_init();
+    
     while(1)
     {
         if(SENSOR_ON) //If switch_1 is ON
@@ -45,7 +50,9 @@ int main(void)
             {
                 ledstat(LED_ON);//LED is ON
                 temp=ReadADC(0);
-                OutPWM(temp);
+                temp_data = OutPWM(temp);
+                UARTwrite(temp_data);
+
             }
             else
             {

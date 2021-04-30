@@ -1,1 +1,1 @@
-@mainpage Activity_1 by nuPURohit @subpage project_main.c
+@mainpage Embedded_C by nuPURohit @subpage main.c

@@ -1,24 +1,21 @@
 var indexSectionsWithContent =
 {
-  0: "dflpu",
-  1: "pu",
-  2: "d",
-  3: "fl"
+  0: "ailoru",
+  1: "a",
+  2: "iloru"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "files",
-  2: "functions",
-  3: "defines"
+  2: "functions"
 };
 
 var indexSectionLabels =
 {
   0: "All",
   1: "Files",
-  2: "Functions",
-  3: "Macros"
+  2: "Functions"
 };
 
