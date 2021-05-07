@@ -12,3 +12,8 @@
 |OFF|ON|
 :--:|:--:
 ![3_OFF](https://github.com/nuPURohit/Embedded_C_LTTS/blob/main/simulation/activity3_OFF.png)|![3_ON](https://github.com/nuPURohit/Embedded_C_LTTS/blob/main/simulation/activity3_ON.png)
+
+# Activity 4
+|OFF|ON|
+:--:|:--:
+![4_OFF](https://github.com/nuPURohit/Embedded_C_LTTS/blob/main/simulation/activity4_OFF.png)|![4_ON](https://github.com/nuPURohit/Embedded_C_LTTS/blob/main/simulation/activity4_ON.png)
